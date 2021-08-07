@@ -19,6 +19,7 @@ body {
   font-family: var(--ff-primary);
   font-size: 0.9375rem;
   line-height: 1.6;
+   background-color: #f2f2f2; 
 }
 
 body,
