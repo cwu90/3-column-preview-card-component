@@ -1,0 +1,153 @@
+:root {
+  --clr-first: hsl(31, 77%, 52%);
+  --clr-second: hsl(184, 100%, 22%);
+  --clr-third: hsl(179, 100%, 13%);
+  --para-text: hsla(0, 0%, 100%, 0.75);
+  --head-text: hsl(0, 0%, 95%);
+
+  --ff-primary: 'Lexend Deca', san-serif;
+  --ff-accent: 'Big Shoulders Display', cursive;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+body,
+h2,
+p {
+  margin: 0;
+}
+
+h2 {
+  font-family: var(--ff-accent);
+  font-weight: 900;
+  color: var(--head-text);
+  font-size: 3rem;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+}
+
+p {
+  color: var(--para-text);
+  font-size: 1.2em;
+  padding-left: 3rem;
+  padding-right: 7rem;
+  padding-bottom: 2.2rem;
+  line-height: 1.5em;
+}
+
+.buttonbox {
+  padding-left: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+button {
+  padding: 0.9em 1.9em;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: var(--ff-primary);
+  font-size: 1.2rem;
+  border: none;
+  border: 2px solid white;
+  border-width: medium;
+}
+
+.orange {
+  color: var(--clr-first);
+}
+
+.sedans button:hover {
+  background-color: var(--clr-first);
+  color: var(--head-text);
+}
+
+.green {
+  color: var(--clr-second);
+}
+
+.suvs button:hover {
+  background-color: var(--clr-second);
+  color: var(--head-text);
+}
+.darkgreen {
+  color: var(--clr-third);
+}
+
+.luxury button:hover {
+  background-color: var(--clr-third);
+  color: var(--head-text);
+}
+
+.icon {
+  padding: 2.5rem 3rem 2rem;
+  /* padding-top: 3rem;
+  padding-left: 2rem;
+  padding-bottom: 2.5rem; */
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  width: 28em;
+}
+
+.luxury {
+  border-bottom-right-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.sedans {
+  border-bottom-left-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+}
+
+.sedans {
+  background-color: var(--clr-first);
+}
+
+.suvs {
+  background-color: var(--clr-second);
+}
+
+.luxury {
+  background-color: var(--clr-third);
+}
+
+@media only screen and (max-width: 1193px) {
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 5em;
+  }
+
+  .sedans {
+    border-bottom-left-radius: 0em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+  }
+
+  .luxury {
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-top-right-radius: 0em;
+  }
+}
