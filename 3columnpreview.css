@@ -32,23 +32,23 @@ h2 {
   font-family: var(--ff-accent);
   font-weight: 900;
   color: var(--head-text);
-  font-size: 3rem;
+  font-size: 2.8rem;
   padding-left: 3rem;
   padding-bottom: 1rem;
 }
 
 p {
   color: var(--para-text);
-  font-size: 1.2em;
+  font-size: 1em;
   padding-left: 3rem;
   padding-right: 7rem;
-  padding-bottom: 0.8rem;
   line-height: 1.4em;
+  padding-bottom: 2.5rem;
 }
 
 .buttonbox {
   padding-left: 3rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 button {
@@ -57,7 +57,7 @@ button {
   box-sizing: border-box;
   text-decoration: none;
   font-family: var(--ff-primary);
-  font-size: 1.2rem;
+  font-size: 1rem;
   border: none;
   border: 2px solid white;
   border-width: medium;
@@ -106,8 +106,8 @@ button {
 }
 
 section {
-  width: 22em;
-  height: 34em;
+  width: 23em;
+  height: 30em;
 }
 
 .luxury {
@@ -153,4 +153,3 @@ section {
     border-top-right-radius: 0em;
   }
 }
-
